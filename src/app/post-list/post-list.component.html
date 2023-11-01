@@ -1,0 +1,12 @@
+<mat-card>
+    <mat-card-title>JSONPlaceholder Posts</mat-card-title>
+    <mat-card-content>
+        <ul>
+            <ng-container *ngFor="let post of posts">
+                <li (mouseenter)="hovered = false" (mouseleave)="hovered = false" [class.hovered]="hovered">
+                    <span>{{ post.id }}</span> - <span>{{ post.title }}</span>
+                </li>
+            </ng-container>
+        </ul>
+    </mat-card-content>
+</mat-card>

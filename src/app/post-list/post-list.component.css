@@ -1,0 +1,64 @@
+/* post-list.component.css */
+
+mat-card {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+mat-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+}
+
+span {
+    margin-right: 10px;
+}
+
+/* İsteğe bağlı olarak başlıkları renklendirebilirsiniz */
+li:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+li:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+    transition: transform 0.2s ease;
+    /* Transform animasyonunu tanımla */
+}
+
+li:hover {
+    transform: scale(1.05);
+    /* Üzerine gelindiğinde büyütme animasyonu */
+    background-color: #1462d8;
+    /* Opsiyonel: Arka plan rengini değiştir */
+    /* Üzerinde gelindiğinde yazı rengini değiştirme */
+    color: #fff;
+}
+
+li.hovered {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
