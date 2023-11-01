@@ -1,0 +1,14 @@
+<!-- user-list.component.html -->
+<div class="user-list">
+  <h2>Users</h2>
+  <div *ngFor="let user of users" class="user-card" (click)="selectUser(user.id)">
+    {{ user.name }}
+  </div>
+</div>
+
+<div class="album-list">
+  <h2>Albums</h2>
+  <div *ngFor="let album of albums" class="album-card" [class.selected]="album.id === selectedAlbumId" (click)="selectAlbum(album.id)">
+    {{ album.title }}
+  </div>
+</div>

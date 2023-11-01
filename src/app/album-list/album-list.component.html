@@ -1,0 +1,5 @@
+<!-- album-list.component.html -->
+<h2>Albums</h2>
+<div *ngFor="let album of albums" class="album-card" [class.selected]="album.id === selectedAlbumId" (click)="selectAlbum(album.id)">
+  {{ album.title }}
+</div>

@@ -1,0 +1,15 @@
+/* photo-list.component.css */
+.photo-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+.photo-title {
+  margin-top: 10px;
+}

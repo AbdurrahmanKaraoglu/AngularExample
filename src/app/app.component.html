@@ -1,1 +1,7 @@
-<app-post-list></app-post-list>
+<!-- app.component.html -->
+<div class="container">
+  <app-user-list [users]="users" (userSelected)="loadAlbums($event)"></app-user-list>
+
+  <app-album-list [userId]="selectedUserId" (albumSelected)="loadPhotos($event)"></app-album-list>
+  <app-photo-list [albumId]="selectedAlbumId"></app-photo-list>
+</div>

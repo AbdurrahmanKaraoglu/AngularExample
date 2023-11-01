@@ -56,6 +56,7 @@ li:hover {
     /* Opsiyonel: Arka plan rengini değiştir */
     /* Üzerinde gelindiğinde yazı rengini değiştirme */
     color: #fff;
+    border:  1px solid #e60808;
 }
 
 li.hovered {

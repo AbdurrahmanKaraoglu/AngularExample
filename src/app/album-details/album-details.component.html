@@ -1,0 +1,6 @@
+<h2 *ngIf="selectedAlbum">{{ selectedAlbum.title }} Photos</h2>
+<ul *ngIf="photos.length > 0">
+  <li *ngFor="let photo of photos">
+    <img [src]="photo.thumbnailUrl" alt="{{ photo.title }}" />
+  </li>
+</ul>

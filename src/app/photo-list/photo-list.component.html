@@ -1,0 +1,8 @@
+<!-- photo-list.component.html -->
+<h2>Photos</h2>
+<div class="photo-cards">
+  <div *ngFor="let photo of photos" class="photo-card">
+    <img [src]="photo.thumbnailUrl" alt="Photo" />
+    <div class="photo-title">{{ photo.title }}</div>
+  </div>
+</div>
