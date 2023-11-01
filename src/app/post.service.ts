@@ -14,3 +14,5 @@ export class PostService {
     return this.http.get<any[]>(`${this.apiUrl}/posts`);
   }
 }
+
+
